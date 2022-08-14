@@ -126,6 +126,11 @@ header{
         flex-direction: column;
         text-align: center;
     }
+    .Box .row1{
+        flex: 1;
+        padding: 1em;
+        color: #fff;
+    }
     .Box .row2{ 
         order: -1;
     }
