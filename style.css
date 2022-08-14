@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-heading-stats: #ffffff;
+    --cardbg: #1b1938;
+    --main: hsla(277, 64%, 61%, 0.5);
+    --paragraph: #ffffffbf;
+     --mainbg:  #090b1a;
+
+
+}
+body{
+    background-color: var(--main-heading-stats);
+    /* overflow: hidden; */
+    font-family: 'Inter', sans-serif;
+
+}
+/* front end mentor */
+
+.attribution { 
+     font-size: 2em;
+     text-align: center;
+     margin: 18px;
+
+}
+.attribution .special:hover{
+    color: blue;
+}
+.attribution a { 
+    color: #000;
+    
+}
+
+
+span.Alone{
+    color: purple;
+}
+.f-size1{font-size: 1.9em;}
+.f-size2{font-size: 1em;}
+.p-t{padding-top: 1.4em;}
+.m-b{margin-bottom: 0.5em;}
+.m-b1{margin-bottom: 1em;}
+.f-weight1{font-weight: 100;}
+.f-weight2{font-weight: 200;}
+.f-weight3 {font-weight: 300;}
+.f-weight33{font-weight: 700;}
+.f-weight4{font-weight: 600;}
+.F-opacity{opacity: 40%;}
+header{
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--mainbg);
+}
+.container{
+    max-width: 1160px;
+    margin:auto;
+    overflow: hidden;
+    padding: 8%; 
+    border-radius: 10px;
+}
+.container .Box{
+    background: var(--cardbg);
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 10px;  
+    overflow: hidden;
+}
+.Box .row1{
+    flex: 1;
+    padding: 3em 4em;
+    color: #fff;
+}
+.row2{
+    position: relative;
+}
+.row2::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--main);
+    
+}
+.Box .row2{
+    flex: 1;
+    
+}
+.Box .row2 img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.Box .row1 .item{
+    display: flex;
+    justify-content:  space-between;
+} 
+@media only screen and (max-width: 300px){
+    .Box .row1 .f-size1{
+        font-size: 0.5em;
+    }
+    .attribution { 
+        font-size: 1em;
+        text-align: center;
+        position: relative;
+        display: block;
+   }
+   a.special{
+       color: #1b1938;
+   }
+   .attribution a { 
+       color: #000;
+   }   
+    
+}
+@media only screen and (max-width: 768px){
+    .container .Box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Box .row2{ 
+        order: -1;
+    }
+    .Box .row1 .f-size1{
+        font-size: 1.4em;
+    } 
+    .item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .item .items{
+        padding-bottom: 30px;
+    }
+    .item .last{
+        padding-bottom: 0;
+    }
+}
