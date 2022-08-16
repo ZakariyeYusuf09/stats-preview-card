@@ -120,6 +120,13 @@ header{
    }   
     
 }
+@media only screen and (max-width: 968px){
+    .Box .row1{
+        flex: 1;
+        padding: 3em;
+        color: #fff;
+    }
+}
 @media only screen and (max-width: 768px){
     .container .Box{
         flex-direction: column;
